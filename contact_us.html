@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="title" content="Igli Shani | Contact Me!">
+    <meta property="description"
+        content="This is Igli Shani. Welcome to my personal blog where you can see a list of my skills and my projects.">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <title>Igli Shani</title>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Personal Site</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="gallery.html">Gallery</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false"> Portfolio </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item" href="#">Project 1</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Project 2</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Project 3</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact_us.html">Contact Me!</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form">
+                    <div
+                        class="form-item webform-component webform-component-textfield webform-component--your-name">
+                        <label for="edit-submitted-your-name">Name <span
+                                class="form-required"
+                                title="This field is required.">*</span></label>
+                        <input required="required" placeholder="Enter your name"
+                            class="form__control form-text required" type="text"
+                            id="edit-submitted-your-name" name="submitted[your_name]"
+                            value="" size="60" maxlength="128">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+            <div class="col-md-6">
+                <div class="form">
+                    <div
+                        class="form-item webform-component webform-component-email webform-component--e-mail">
+                        <label for="edit-submitted-e-mail">E-mail <span
+                                class="form-required"
+                                title="This field is required.">*</span></label>
+                        <input required="required"
+                            class="form__control form-text form-email required"
+                            placeholder="Enter Email Address" type="email"
+                            id="edit-submitted-e-mail" name="submitted[e_mail]" size="60">
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form">
+                    <div
+                        class="form-item webform-component webform-component-select webform-component--reason">
+                        <label for="edit-submitted-reason">Related to: <span
+                                class="form-required"
+                                title="This field is required.">*</span></label>
+                        <select required="required"
+                            class="form__control form-select required"
+                            id="edit-submitted-reason" name="submitted[reason]">
+                            <option value="Error" selected="">Select One</option>
+                            <option value="Project">Project</option>
+                            <option value="Feedback">Suggestion</option>
+                            <option value="Bug">Bug</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form-item webform-component webform-component-textfield webform-component--error-page-link webform-conditional-hidden"
+            style="display: none;">
+            <label for="edit-submitted-error-page-link">Error Page Link <span
+                    class="form-required" title="This field is required.">*</span></label>
+            <input required="required" placeholder="Error Page Link"
+                class="form__control form-text required webform-conditional-disabled"
+                type="text" id="edit-submitted-error-page-link"
+                name="submitted[error_page_link]" value="" size="60" maxlength="128"
+                disabled="">
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form">
+                    <div
+                        class="form-item webform-component webform-component-textarea webform-component--message">
+                        <label for="edit-submitted-message">Message <span
+                                class="form-required"
+                                title="This field is required.">*</span></label>
+                        <div
+                            class="form-textarea-wrapper resizable textarea-processed resizable-textarea">
+                            <textarea required="required" placeholder="Enter message"
+                                class="form__control form__control--textarea form-textarea required"
+                                id="edit-submitted-message" name="submitted[message]"
+                                cols="60" rows="5"></textarea>
+                            <div class="grippie"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form-item webform-component webform-component-hidden webform-component--referrer"
+            style="display: none">
+            <input type="hidden" name="submitted[referrer]" value="">
+
+        </div>
+        <input type="hidden" name="details[sid]">
+        <input type="hidden" name="details[page_num]" value="1">
+        <input type="hidden" name="details[page_count]" value="1">
+        <input type="hidden" name="details[finished]" value="0">
+        <div class="form-actions">
+            <div class="row">
+                <div class="col-md-12 d-flex justify-content-end"><input
+                        class="webform-submit button-primary btn btn--withstate btn--primary btn--block-sp form-submit ajax-processed"
+                        type="submit" id="edit-submit" name="op" value="Submit"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
