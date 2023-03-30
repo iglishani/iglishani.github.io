@@ -79,6 +79,11 @@ header{
     width: 25%;
     height: auto;
     text-align: center;
+    transition-timing-function: ease-in-out;
+  }
+  .mp4 video:hover{
+    transform: scale(1.05);
+    
   }
 
 .darkmode{
