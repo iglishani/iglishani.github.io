@@ -47,12 +47,14 @@ header{
   width:80px;
   height: auto;
 }
-
+.description{
+  max-width:80%
+}
 
 .hidden {
   visibility: hidden;
 }
-
+ 
   /*Site name decorator*/
 
 .site-title {
@@ -89,13 +91,13 @@ header{
 .container {
     display: flex;
   }
-  .mp4 {
+  .servicelogo {
     width: 25%;
     height: auto;
     text-align: center;
     transition-timing-function: ease-in-out;
   }
-  .mp4 video:hover{
+  .servicelogo video:hover{
     transform: scale(1.05);
     
   }
