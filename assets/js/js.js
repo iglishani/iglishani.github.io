@@ -1,31 +1,44 @@
-var day=document.getElementById('day') //get sun image
-var night=document.getElementById('night')//get moon image
- 
-day.addEventListener("click",toggleday) //add eventlistener for click
-night.addEventListener("click",togglenight)//calls function to make changes
+const day=document.getElementById('day')
+const night=document.getElementById('night')
+day.addEventListener('click',togglenight)
+night.addEventListener('click',toggleday)
 
-function togglenight(){
-    night.style.visibility='hidden' //set visibility to hidden. sun hides.
-    day.style.visibility=''         //removes hidden, moon shows
-    var nightelements = document.getElementsByClassName('bg-dark')//get all elements with current class bg-dark
-    for(let element of nightelements){      //iterates the array of elements, replacing each class acordingly.
-        element.classList.replace('bg-dark','bg-light')
-    }
-}
 
-function toggleday(){
+function toggleday() {
+    var day = document.getElementById('day'); //get sun image
+    var night = document.getElementById('night');//get moon image
+  
+    night.className = 'hidden'; //hide moon
+    day.className = '';//show sun
+  
+    // Convert the HTMLCollection to an array to avoid live updates
+    var dayelements = Array.from(document.getElementsByClassName('bg-dark'));
+  
+    // Replace all instances of the class name in each element
+    dayelements.forEach(element => {
+      element.classList.remove('bg-dark');
+      element.classList.add('bg-light');
+    });
+  }
 
-    night.style.visibility=''
-    day.style.visibility='hidden'
-    var dayelements = document.getElementsByClassName('bg-light')
-    for(let element of dayelements){
-        element.classList.replace('bg-light','bg-dark')
-    }
-}
+function togglenight() {
+    var day = document.getElementById('day'); //get sun image
+    var night = document.getElementById('night');//get moon image
+  
+    night.className = ''; //show moon
+    day.className = 'hidden';//hide sun
+  
+    // Convert the HTMLCollection to an array to avoid live updates
+    var dayelements = Array.from(document.getElementsByClassName('bg-light'));
+  
+    // Replace all instances of the class name in each element
+    dayelements.forEach(element => {
+      element.classList.remove('bg-light');
+      element.classList.add('bg-dark');
+    });
+  }
+  
 
-var images = document.getElementsByClassName('carousel-item')
-console.log(images)
-const total=images.length
 
 
 
