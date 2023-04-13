@@ -1,5 +1,48 @@
+
 * {
   /*outline: 1px solid red;*/
+}
+.circle-sketch-highlight{
+  position:relative;
+  left:0;
+  font-family: Libre Franklin;
+  font-size: 32px;
+  font-weight: 500;
+}
+.circle-sketch-highlight:before{
+  content:"";
+  z-index:-1;
+  left: -0.91em;
+  top:-0.421em;
+  border-width:3px;
+  border-style:solid;
+  border-color:#557fda;
+  position:absolute;
+  border-right-color:transparent;
+  width:150%;
+  height:2em;
+  transform:rotate(2deg);
+  opacity:0.7;
+  border-radius:50%;
+  padding:0.1em 0.25em;
+}
+.circle-sketch-highlight:after{
+  content:"";
+  z-index:-1;
+  left:-1.063em;
+  top:0.07em;
+  padding:0.1em 0.25em;
+  border-width:3px;
+  border-style:solid;
+  border-color:#557fda;
+  border-left-color:transparent;
+  border-top-color:transparent;
+  position:absolute;
+  width:150%;
+  height:1.1em;
+  transform:rotate(-2deg);
+  opacity:0.7;
+  border-radius:50%;
 }
 .nodecor{
   text-decoration: none;
@@ -132,3 +175,4 @@ header{
  
  
  
+

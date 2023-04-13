@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <script src="/assets/pages/js/script.js"></script>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <title>Simple Counter</title>
+</head>
+
+<body class="bg-light">
+    <div id="importnavbar"></div>
+    <!--Content Here-->
+    <div class="row m-lg-4" style="background-color:lightgrey">
+        <div class="rounded text-center">
+            <div id='count' class=text>0</div>
+            <button type="button" id='btn' class="btn btn-success">Add</button>
+            <button type="button" id='reset' class="btn btn-warning">Reset</button>
+        </div>
+    </div>
+
+    <p> JS Code:</p>
+    <pre>
+        const btn = document.getElementById('btn')
+        const reset = document.getElementById('reset')
+        
+        btn.addEventListener('click', function () {
+            const countTag = document.getElementById('count')
+            let value = Number(countTag.innerText)
+            countTag.innerText = value + 1
+        
+        })
+        reset.addEventListener('click', function () {
+            const countTag = document.getElementById('count')
+            countTag.innerText = 0
+        
+        })
+    </pre>
+
+    <div class="container mt-5">
+        <div class="content mx-auto">
+            <h1 class="mb-3">To-Do List</h1>
+            <div class="mb-3">
+                <div class="row">
+                    <div class="col-md-6">
+                        <input type="text" class="form-control " placeholder="Enter a new task...">
+                    </div>
+                    <div class="d-grid col-md-2">
+                        <button id="add-task" class="btn btn-primary">Add Task</button>
+                    </div>
+                </div>
+            </div>
+            <div id="task-list"></div>
+        </div>
+    </div>
+
+    <!--End of content-->
+    <div id="importfooter"></div>
+    <script>
+        importnavbar()
+        importfooter()
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script src="/assets/js/js.js"></script>
+
+
+
+    <script>
+        AOS.init();
+        const btn = document.getElementById('btn')
+        const reset = document.getElementById('reset')
+
+        btn.addEventListener('click', function () {
+            const countTag = document.getElementById('count')
+            let value = Number(countTag.innerText)
+            countTag.innerText = value + 1
+
+        })
+        reset.addEventListener('click', function () {
+            const countTag = document.getElementById('count')
+            countTag.innerText = 0
+
+
+        })
+
+        // Add a new task to the list
+        const addTask = (task) => {
+            const taskItem = document.createElement('div');
+            taskItem.classList.add('form-check', 'd-flex', 'align-items-center', 'gap-3');
+            taskItem.innerHTML = `
+    <input class="task-check" type="checkbox" id="task-${taskId}">
+    <label class="task-check-label" for="task-${taskId}">${task}</label>
+    <button type="button" class="btn-close" aria-label="Close" data-task-id="${taskId}"></button>
+  `;
+            taskList.appendChild(taskItem);
+            taskId++;
+        }
+        // Remove a task from the list
+        const removeTask = (taskId) => {
+            const taskItem = document.querySelector(`#task-${taskId}`).parentNode;
+            taskList.removeChild(taskItem);
+        }
+        // DOM Elements and Global Variables
+        const addTaskBtn = document.getElementById('add-task');
+        const input = document.querySelector('input');
+        const taskList = document.querySelector('#task-list');
+        let taskId = 0;
+        let randomImgId = 1
+
+        // Handle Add Task button click
+        addTaskBtn.addEventListener('click', () => {
+            const task = input.value.trim();
+            const taskWithImg = `<img class="me-3" src="https://picsum.photos/50/50?random=${randomImgId}"> <span>${task}</span>`;
+
+
+            if (task !== '') {
+                addTask(taskWithImg);
+                input.value = '';
+                randomImgId++;
+            }
+        });
+
+        // Handle completing a task and removing it from the list
+        taskList.addEventListener('click', (e) => {
+            const target = e.target;
+            if (target.matches('.task-check')) {
+                const label = target.parentNode.querySelector('label');
+                if (target.checked) {
+                    label.classList.add('text-decoration-line-through');
+                } else {
+                    label.classList.remove('text-decoration-line-through');
+                }
+            } else if (target.matches('.btn-close')) {
+                const taskId = target.getAttribute('data-task-id');
+                removeTask(taskId);
+            }
+        });
+
+    </script>
+
+</body>
+
+</html>

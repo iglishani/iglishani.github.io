@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <title>Dark Knight Rises</title>
+    <style>
+        
+body{
+  background-image:url('https://coolwallpapers.me/picsup/2872672-the-dark-knight-rises-bane-movies-messenjahmatt-tom-hardy___movie-wallpapers.jpg');
+    background-repeat: none;
+    background-size: fill;
+height: 100%;
+  width: 100%;
+}
+#sound-area{
+    top:500px;
+    left:0
+}
+
+#torch {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  cursor : hand;
+  
+  
+  background:radial-gradient(circle at var(--X) var(--Y), rgba(0, 0, 0, 0) 75px, rgba(0, 0, 0, 0.25) 120px,rgba(0, 0, 0, 0.5) 190px, rgba(0, 0, 0, 0.92) 220px);
+
+}
+
+h1 {
+  font-size: 100px;
+}
+    </style>
+</head>
+<body>
+<div id="container">
+    <div id="torch"></div>
+    <audio src="http://www.moviesoundclips.net/download.php?id=4068&ft=mp3"  autoplay ></audio>
+</div>
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+           integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+           crossorigin="anonymous"></script>
+       <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+       <script>
+//Get position of mouse and set torch div style to match coords
+function update(e) {
+  var x = e.clientX; // get x possition
+  var y = e.clientY; // get y possition
+  // console.log(x,y) // view coordinates on console.
+
+  document.getElementById("torch").style.setProperty("--X", x + "px"); //set position of the torch
+  document.getElementById("torch").style.setProperty("--Y", y + "px");
+}
+
+document.getElementById("torch").style.setProperty("--X", 0 + "px"); //set position to 0
+document.getElementById("torch").style.setProperty("--Y", 0 + "px");
+
+document.addEventListener("mousemove", update); //run update function on mousemove
+document.addEventListener("touchmove", update);// This will update the torch possition to follow the mouse.
+// Reference to the <audio> element
+    var audioElement = document.getElementById('audio-element');
+
+// Ask for permission to play audio
+audioElement.play()
+.then(function() {
+  // Audio playback allowed, do something
+})
+.catch(function(error) {
+  // Audio playback denied, handle the error
+  console.error('Failed to play audio:', error);
+});
+</script>
+</body>
+</html>

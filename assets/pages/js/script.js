@@ -3,7 +3,7 @@ async function print() {
     let authorDiv = document.getElementById("author-output");
     //fetching data
     const fetchdata = fetch("https://api.themotivate365.com/stoic-quote");
-
+    
     // while waiting for the promise to resolve, run spinner from bootstrap
     quoteDiv.innerHTML = `<div class="spinner-border text-secondary" role="status">
         <span class="sr-only"></span>`;
@@ -55,3 +55,6 @@ function importfooter() {
             document.getElementById('importfooter').innerHTML = data;
         });
 }
+
+
+

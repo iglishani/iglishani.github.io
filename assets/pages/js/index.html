@@ -8,71 +8,20 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" >
     <script src="/assets/pages/js/script.js"></script>
     <link rel="stylesheet" href="/assets/css/style.css">
-        <script>
-
-
-      </script>
      <title>JS Examples</title>
 </head>
 <body class="bg-light">
     <div id="importnavbar"></div>
+    <!--Content Here-->
+    <ul>
+        <li><a href="/assets/pages/js/randomquote.html">Random Quote Generator</a>
 
-    <div class="bg-light container d-flex flex-column justify-content-center">
-        <h1 class="text-center">Random Quote Generator</h1>
-        <div class="content mx-auto mt-5 text-center">
-          <div id="quote-output">Click below to generate a quote</div>
-          <div id="author-output"></div>
-          <button onclick="print()" id="new-quote-btn" class="btn btn-success mt-5">New Quote</button>
-        </div>
-      </div>
-      <div class="container d-flex flex-column justify-content-center">
-        <h2 class="text-center mt-5">JavaScript Code</h2>
+        </li>
+        <li>
+            <a href="/assets/pages/js/counter.html">Simple Counter</a>
+        </li>
+    </ul>
 
-      
-        <pre class="bg-light">
-            async function print() {
-                let quoteDiv = document.getElementById("quote-output");
-                let authorDiv = document.getElementById("author-output");
-                //fetching data
-                const fetchdata = fetch("https://api.themotivate365.com/stoic-quote");
-            
-                // while waiting for the promise to resolve, run spinner from bootstrap
-                
-                quoteDiv.innerHTML = 'BOOTSTRAP SPINNER HERE';
-            
-                // Set a timeout of 5 seconds. This will create a promise that will return an error in 5seconds
-                const timeout = new Promise((resolve, reject) => {
-                    setTimeout(() => reject(new Error('Request timed out')), 5000);
-                });
-             
-                try {
-                    // Await for the promise to resolve or for the timeout to occur
-                    // Promis.race() will respond to which of the two resolves faster.
-                    // If fetchdata resolves, it carrys with the code.
-                    //If timeout resolves(from above it will resove in 5s)
-                    //Note that fetchdata will resolve even if doesn't respond with our data requested.
-                    //A 404 is a valid response. This will measure only API that take more than 5s to respond.
-                    const response = await Promise.race([fetchdata, timeout]);
-            
-                    if (response.status === 200) {
-                        response.json().then(data => {
-                            quoteDiv.innerText = data.quote;
-                            authorDiv.innerText = data.author;
-                        });
-                    } else {
-                        quoteDiv.innerHTML = ''; //clear the spinner
-                        authorDiv.innerText = 'Error: ' + response.status;
-                    }
-                } catch (error) {
-                    quoteDiv.innerHTML = '';//clear the spinner
-                    authorDiv.innerText = 'Error: ' + error.message;
-                }
-            }
-            
-        </pre>
-       
-    
-    
     <div id="importfooter"></div>
     <script >
         importnavbar()
@@ -90,5 +39,6 @@
     
     
       </script>
+
 </body>
-</html>
+</html> 

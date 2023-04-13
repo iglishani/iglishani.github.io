@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" >
+    <script src="/assets/pages/js/script.js"></script>
+    <link rel="stylesheet" href="/assets/css/style.css">
+     <title>JS Examples</title>
+</head>
+<body class="bg-light">
+    <div id="importnavbar"></div>
+
+    <div class="bg-light container d-flex flex-column justify-content-center">
+        <h1 class="text-center">Random Quote Generator</h1>
+        <div class="content mx-auto mt-5 text-center">
+          <div id="quote-output">Click below to generate a quote</div>
+          <div id="author-output"></div>
+          <button onclick="print()" id="new-quote-btn" class="btn btn-success mt-5">New Quote</button>
+        </div>
+      </div>
+      <div class="container d-flex flex-column justify-content-center">
+        <h2 class="text-center mt-5">JavaScript Code</h2>
+
+      
+        <pre class="bg-light">
+            async function print() {
+                let quoteDiv = document.getElementById("quote-output");
+                let authorDiv = document.getElementById("author-output");
+                //fetching data
+                const fetchdata = fetch("https://api.themotivate365.com/stoic-quote");
+            
+                // while waiting for the promise to resolve, run spinner from bootstrap
+                
+                quoteDiv.innerHTML = 'BOOTSTRAP SPINNER HERE';
+            
+                // Set a timeout of 5 seconds. This will create a promise that will return an error in 5seconds
+                const timeout = new Promise((resolve, reject) => {
+                    setTimeout(() => reject(new Error('Request timed out')), 5000);
+                });
+             
+                try {
+                    // Await for the promise to resolve or for the timeout to occur
+                    // Promis.race() will respond to which of the two resolves faster.
+                    // If fetchdata resolves, it carrys with the code.
+                    //If timeout resolves(from above it will resove in 5s)
+                    //Note that fetchdata will resolve even if doesn't respond with our data requested.
+                    //A 404 is a valid response. This will measure only API that take more than 5s to respond.
+                    const response = await Promise.race([fetchdata, timeout]);
+            
+                    if (response.status === 200) {
+                        response.json().then(data => {
+                            quoteDiv.innerText = data.quote;
+                            authorDiv.innerText = data.author;
+                        });
+                    } else {
+                        quoteDiv.innerHTML = ''; //clear the spinner
+                        authorDiv.innerText = 'Error: ' + response.status;
+                    }
+                } catch (error) {
+                    quoteDiv.innerHTML = '';//clear the spinner
+                    authorDiv.innerText = 'Error: ' + error.message;
+                }
+            }
+            
+        </pre>
+       
+    
+    
+    <div id="importfooter"></div>
+    <script >
+        importnavbar()
+        importfooter()
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script src="/assets/js/js.js"></script>
+    
+    <script>
+        AOS.init();
+    
+    
+    
+    
+      </script>
+</body>
+</html>

@@ -1,413 +1,532 @@
 <!DOCTYPE html>
 <html lang="en" data-bs-theme="dark">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    
-    <link rel="icon" href="/assets/media/images/favico-white.ico">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" >
-    <link rel="stylesheet" href="/assets/css/style.css">
-    
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <link rel="icon" href="/assets/media/images/favico-white.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <link rel="stylesheet" href="/assets/css/style.css">
 
 
-    <!--Fonts-->
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin"/>
-    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700;800&amp;display=swap"/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700;800&amp;display=swap" media="print" onload="this.media='all'"/>
-  
-     
-    <noscript>
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700;800&amp;display=swap"/>
-    </noscript>
-    <noscript>
-        <style type="text/css">
-          [data-aos] {
-              opacity: 1 !important;
-              transform: translate(0) scale(1) !important;
-          }
-        </style>
-      </noscript>
 
-    <title>Igli Shani | Home Page</title>
+  <!--Fonts-->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin" />
+  <link rel="preload" as="style"
+    href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700;800&amp;display=swap" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700;800&amp;display=swap" media="print"
+    onload="this.media='all'" />
+
+
+  <noscript>
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700;800&amp;display=swap" />
+  </noscript>
+  <noscript>
+    <style type="text/css">
+      [data-aos] {
+        opacity: 1 !important;
+        transform: translate(0) scale(1) !important;
+      }
+    </style>
+  </noscript>
+
+  <title>Igli Shani | Home Page</title>
 </head>
+
 <body class="bg-light">
-    <!-- header -->
-    <header >
-      <nav class="navbar navbar-expand-lg " id="header-nav" role="navigation">
-       <div class="container"><a href="/index.html"><img id ='logo' src="/assets/media/images/logo.png" alt="logo"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"  aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto me-2" >
-              <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-              <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
-              <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-              <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
-              <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-              <li class="nav-item"><!--Dark Mode-->
+  <!-- header -->
+  <header>
+    <nav class="navbar navbar-expand-lg " id="header-nav" role="navigation">
+      <div class="container"><a href="/index.html"><img id='logo' src="/assets/media/images/logo.png" alt="logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span
+            class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto me-2">
+            <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+            <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+            <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            <li class="nav-item"><!--Dark Mode-->
               <div class=" darkmode form-check form-switch ms-1 mt-3 me-3">
-                <div  id="day">
-                  <img src="/assets/media/images/day.svg" alt="day mode" width="16" height="16" fill="currentColor" class="bi bi-moon-stars-fill" viewBox="0 0 16 16" role="img" aria-label="Sunshine">
+                <div id="day">
+                  <img src="/assets/media/images/day.svg" alt="day mode" width="16" height="16" fill="currentColor"
+                    class="bi bi-moon-stars-fill" viewBox="0 0 16 16" role="img" aria-label="Sunshine">
                 </div>
-                  <div id ='night' class="hidden">
-                    <img src="/assets/media/images/night.svg" alt="Moon" width="16" height="16" fill="currentColor" class="bi bi-moon-stars-fill" viewBox="0 0 16 16" role="img" aria-label="Moon with stars">
-                  </div>
-                  
+                <div id='night' class="hidden">
+                  <img src="/assets/media/images/night.svg" alt="Moon" width="16" height="16" fill="currentColor"
+                    class="bi bi-moon-stars-fill" viewBox="0 0 16 16" role="img" aria-label="Moon with stars">
+                </div>
+
               </div>
             </li>
-            </ul>               
-          </div>
-    
-           
-           
-         
-          </div>
+          </ul>
         </div>
-      </nav>
-    </header>
-    <!--Me-->
-    <section id="main" class="full-height">
-        <div class="cover">
-          <div class="container px-3">
-            <div class="row">
-              <div class="col-lg-6 p-2"><img id = 'me'class="img-fluid rounded-circle" src="/assets/media/images/me.jpg" alt="hello"/></div>
-              <div class="col-lg-6">
-                <div class="mt-5">
-                  <p class="lead text-uppercase mb-1">Hello!</p>
-                  <h1 class="intro-title marker" data-aos="fade-left" data-aos-delay="50">I’m Igli Shani</h1>
-                  <p class="lead fw-normal mt-3" data-aos="fade-up" data-aos-delay="100">Web Developer</p>
-                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque temporibus cupiditate quae debitis, eveniet ut? Qui est nobis, veniam quaerat corporis voluptatibus, expedita beatae omnis eaque error doloribus vitae eligendi.</p>
-                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo, quia. Eveniet animi error repellat quibusdam sequi, suscipit fugit, quasi explicabo voluptate illum eius. Saepe, officiis nobis delectus harum ipsa asperiores!</p>
-                  <div class="social-nav" data-aos="fade-up" data-aos-delay="200">
-                    <nav role="navigation">
-                      <ul class="nav justify-content-left">
-                        <li class="nav-item"><a class="nav-link" href="https://twitter.com/shaniIgli" title="Twitter"><i class="fab fa-twitter"></i><span class="menu-title sr-only">Twitter</span></a></li>
-                        <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/iglishani" title="Facebook"><i class="fab fa-facebook"></i><span class="menu-title sr-only">Facebook</span></a></li>
-                        <li class="nav-item"><a class="nav-link" href="https://www.instagram.com/iglishani" title="Instagram"><i class="fab fa-instagram"></i><span class="menu-title sr-only">Instagram</span></a></li>
-                        <li class="nav-item"><a class="nav-link" href="https://www.linkedin.com/igli-shani" title="LinkedIn"><i class="fab fa-linkedin"></i><span class="menu-title sr-only">LinkedIn</span></a></li>
-                        <li class="nav-item"><a class="nav-link" href="https://www.github.com/iglishani" title="Github"><i class="fab fa-github"></i><span class="menu-title sr-only">Github</span></a></li>
-                      </ul>
-                    </nav>
-                  </div>
-                  <div class="mt-3" data-aos="fade-up" data-aos-delay="200"><a class="btn btn-primary shadow-sm mt-1 hover-effect" href="#contact">Get In Touch <i class="fas fa-arrow-right"></i></a></div>
-                </div>
+
+
+      
+
+      </div>
+      </div>
+    </nav>
+  </header>
+  <!--Me-->
+  <section id="main" class="full-height">
+    <div class="cover">
+      <div class="container px-3">
+        <div class="row">
+          <div class="col-lg-6 p-2"><img id='me' class="img-fluid rounded-circle" src="/assets/media/images/me.jpg"
+              alt="hello" /></div>
+          <div class="col-lg-6">
+            <div class="mt-5">
+              <p class="lead text-uppercase mb-1">Hello!</p>
+              <h1 class="intro-title marker" data-aos="fade-left" data-aos-delay="50">I’m Igli Shani</h1>
+              <p class="lead fw-normal mt-3" data-aos="fade-up" data-aos-delay="100"><span class="circle-sketch-highlight">Web Developer</span></p>
+               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque temporibus cupiditate quae debitis,
+                eveniet ut? Qui est nobis, veniam quaerat corporis voluptatibus, expedita beatae omnis eaque error
+                doloribus vitae eligendi.</p>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo, quia. Eveniet animi error repellat
+                quibusdam sequi, suscipit fugit, quasi explicabo voluptate illum eius. Saepe, officiis nobis delectus
+                harum ipsa asperiores!</p>
+              <div class="social-nav" data-aos="fade-up" data-aos-delay="200">
+                <nav role="navigation">
+                  <ul class="nav justify-content-left">
+                    <li class="nav-item"><a class="nav-link" href="https://twitter.com/shaniIgli" title="Twitter"><i
+                          class="fab fa-twitter"></i><span class="menu-title sr-only">Twitter</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/iglishani"
+                        title="Facebook"><i class="fab fa-facebook"></i><span
+                          class="menu-title sr-only">Facebook</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://www.instagram.com/iglishani"
+                        title="Instagram"><i class="fab fa-instagram"></i><span
+                          class="menu-title sr-only">Instagram</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://www.linkedin.com/igli-shani"
+                        title="LinkedIn"><i class="fab fa-linkedin"></i><span
+                          class="menu-title sr-only">LinkedIn</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://www.github.com/iglishani" title="Github"><i
+                          class="fab fa-github"></i><span class="menu-title sr-only">Github</span></a></li>
+                  </ul>
+                </nav>
               </div>
+              <div class="mt-3" data-aos="fade-up" data-aos-delay="200"><a
+                  class="btn btn-primary shadow-sm mt-1 hover-effect" href="#contact">Get In Touch <i
+                    class="fas fa-arrow-right"></i></a></div>
             </div>
           </div>
-        </div>
-        <div class="wave-bg"></div>
-      </section>
-    <div class="full-height section px-3 px-lg-4 pt-2" id="services" >
-        <div class="container-narrow" >
-          <div class="text-center mb-3">
-            <h2 class="marker marker-center">My Services</h2>
-          </div>
-          <div class="text-center">
-            <p class="mx-auto mb-3" style="max-width:80%"> Transform your online presence with custom website development, UI/UX design, and SEO optimization. My expertise in Web Developement ensures a dynamic user experience that engages and converts visitors.</p>
-          </div>
-          <div class="container mb-2">
-            <div class="servicelogo">
-                <video src="/assets/media/video/web-development-3782123-3203487.mp4" alt="Web Design video" type="video/mp4"  autoplay="autoplay" loop="loop" width="100%" height="250px"></video>
-                <div><a class="nodecor" href="#"><h5>Web Design</h5></a></div>  
-            </div>
-            <div class="servicelogo">
-              <video src="/assets/media/video/web-development-3782123-3203487.mp4" alt="Graphic Desing Video" type="video/mp4"  autoplay="autoplay" loop="loop" width="100%" height="250px"></video>
-              <div ><a class="nodecor" href="#"><h5>Graphic Design</h5></a></div>
-            </div>
-            <div class="servicelogo">
-                <video src="/assets/media/video/web-development-3782123-3203487.mp4" alt="UI/UX Video" type="video/mp4"  autoplay="autoplay" loop="loop" width="100%" height="250px"></video>
-                <div><a class="nodecor" href="#"><h5>UI/UX</h5></a></div> 
-            </div>
-              <div class="servicelogo">
-                <video src="/assets/media/video/web-development-3782123-3203487.mp4" alt="App Development Video" type="video/mp4"  autoplay="autoplay" loop="loop" width="100%" height="250px"></video>
-                <div><a class="nodecor" href="#"><h5>App Development</h5></a></div>
-              </div>           
-          </div>
-          <div class="container mb-3">
-            <div class="servicelogo">
-              <video src="/assets/media/video/web-development-3782123-3203487.mp4" alt="App Development Video" type="video/mp4"  autoplay="autoplay" loop="loop" width="100%" height="250px"></video>
-              <div><a class="nodecor" href="#"><h5>App Development</h5></a></div>
-            </div>
-            <div class="servicelogo">
-              <video src="/assets/media/video/web-development-3782123-3203487.mp4" alt="App Development Video" type="video/mp4"  autoplay="autoplay" loop="loop" width="100%" height="250px"></video>
-              <div><a class="nodecor" href="#"><h5>App Development</h5></a></div>
-            </div>
-            <div class="servicelogo">
-              <video src="/assets/media/video/web-development-3782123-3203487.mp4" alt="App Development Video" type="video/mp4"  autoplay="autoplay" loop="loop" width="100%" height="250px"></video>
-              <div><a class="nodecor" href="#"><h5>App Development</h5></a></div>
-            </div>
-            <div class="servicelogo">
-              <video src="/assets/media/video/web-development-3782123-3203487.mp4" alt="App Development Video" type="video/mp4"  autoplay="autoplay" loop="loop" width="100%" height="250px"></video>
-              <div><a class="nodecor" href="#"><h5>App Development</h5></a></div>
-           </div>
- 
         </div>
       </div>
+    </div>
+    <div class="wave-bg"></div>
+  </section>
+  <section class="full-height section px-3 px-lg-4 pt-2" id="services">
+    <div class="container-narrow">
+      <div class="text-center mb-3">
+        <h2 class="marker marker-center">My Services</h2>
+      </div>
+      <div class="text-center">
+        <p class="mx-auto mb-3" style="max-width:80%"> Transform your online presence with custom website development,
+          UI/UX design, and SEO optimization. My expertise in Web Developement ensures a dynamic user experience that
+          engages and converts visitors.</p>
+      </div>
+      <div class="container mb-2">
+        <div class="servicelogo">
+          <video src="/assets/media/video/web-development-3782123-3203487.mp4" alt="Web Design video" type="video/mp4"
+            autoplay="autoplay" loop="loop" width="100%" height="250px"></video>
+          <div><a class="nodecor" href="#">
+              <h5>Web Design</h5>
+            </a></div>
+        </div>
+        <div class="servicelogo">
+          <video src="/assets/media/video/web-development-3782123-3203487.mp4" alt="Graphic Desing Video"
+            type="video/mp4" autoplay="autoplay" loop="loop" width="100%" height="250px"></video>
+          <div><a class="nodecor" href="#">
+              <h5>Graphic Design</h5>
+            </a></div>
+        </div>
+        <div class="servicelogo">
+          <video src="/assets/media/video/web-development-3782123-3203487.mp4" alt="UI/UX Video" type="video/mp4"
+            autoplay="autoplay" loop="loop" width="100%" height="250px"></video>
+          <div><a class="nodecor" href="#">
+              <h5>UI/UX</h5>
+            </a></div>
+        </div>
+        <div class="servicelogo">
+          <video src="/assets/media/video/web-development-3782123-3203487.mp4" alt="App Development Video"
+            type="video/mp4" autoplay="autoplay" loop="loop" width="100%" height="250px"></video>
+          <div><a class="nodecor" href="#">
+              <h5>App Development</h5>
+            </a></div>
+        </div>
+      </div>
+      <div class="container mb-3">
+        <div class="servicelogo">
+          <video src="/assets/media/video/web-development-3782123-3203487.mp4" alt="App Development Video"
+            type="video/mp4" autoplay="autoplay" loop="loop" width="100%" height="250px"></video>
+          <div><a class="nodecor" href="#">
+              <h5>App Development</h5>
+            </a></div>
+        </div>
+        <div class="servicelogo">
+          <video src="/assets/media/video/web-development-3782123-3203487.mp4" alt="App Development Video"
+            type="video/mp4" autoplay="autoplay" loop="loop" width="100%" height="250px"></video>
+          <div><a class="nodecor" href="#">
+              <h5>App Development</h5>
+            </a></div>
+        </div>
+        <div class="servicelogo">
+          <video src="/assets/media/video/web-development-3782123-3203487.mp4" alt="App Development Video"
+            type="video/mp4" autoplay="autoplay" loop="loop" width="100%" height="250px"></video>
+          <div><a class="nodecor" href="#">
+              <h5>App Development</h5>
+            </a></div>
+        </div>
+        <div class="servicelogo">
+          <video src="/assets/media/video/web-development-3782123-3203487.mp4" alt="App Development Video"
+            type="video/mp4" autoplay="autoplay" loop="loop" width="100%" height="250px"></video>
+          <div><a class="nodecor" href="#">
+              <h5>App Development</h5>
+            </a></div>
+        </div>
+
+      </div>
+    </div>
     <!--portfolio-->
-    <div class="full-height section px-3 px-lg-4 pt-5" id="portfolio" >
-        <div class="container-narrow">
-          <div class="text-center mb-5">
-            <h2 class="marker marker-center">Portfolio</h2>
+    <div class="full-height section px-3 px-lg-4 pt-5" id="portfolio">
+      <div class="container-narrow">
+        <div class="text-center mb-5">
+          <h2 class="marker marker-center nodecor"><a href="/assets/pages/portfolio.html">Portfolio</a></h2>
+        </div>
+        <div class="text-center">
+          <p class="mx-auto mb-3 description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem laboriosam
+            fuga, nam nostrum minima, enim aperiam ad exercitationem illo suscipit qui, similique dolore ex vel
+            provident natus laborum! Molestias, est?</p>
+        </div>
+        <div class="row py-5">
+          <div class="col-md-3 text-center" data-aos="fade-up" data-aos-delay="100"><img
+              src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" width="96" height="96"
+              alt="graphic design" />
+            <div class="h5">Python</div>
           </div>
-          <div class="text-center">
-            <p class="mx-auto mb-3 description" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem laboriosam fuga, nam nostrum minima, enim aperiam ad exercitationem illo suscipit qui, similique dolore ex vel provident natus laborum! Molestias, est?</p>
+          <div class="col-md-3 text-center" data-aos="fade-up" data-aos-delay="200"><img class="mb-2"
+              src="https://upload.wikimedia.org/wikipedia/commons/2/21/Devicon-html5-plain-wordmark.svg" width="96"
+              height="96" alt="graphic design" />
+            <div class="h5">HTML</div>
           </div>
-          <div class="row py-5">
-            <div class="col-md-3 text-center" data-aos="fade-up" data-aos-delay="100"><img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" width="96" height="96" alt="graphic design"/>
-              <div class="h5">Python</div>
-            </div>
-            <div class="col-md-3 text-center" data-aos="fade-up" data-aos-delay="200"><img class="mb-2" src="https://upload.wikimedia.org/wikipedia/commons/2/21/Devicon-html5-plain-wordmark.svg" width="96" height="96" alt="graphic design"/>
-              <div class="h5">HTML</div>
-            </div>
-            <div class="col-md-3 text-center" data-aos="fade-up" data-aos-delay="300"><img class="mb-2" src="https://upload.wikimedia.org/wikipedia/commons/f/f5/Devicon-css3-plain-wordmark.svg" width="96" height="96" alt="javascript"/>
-              <div class="h5">CSS</div>
-            </div>
-            <div class="col-md-3 text-center" data-aos="fade-up" data-aos-delay="400"><a class = "nodecor "href="/assets/pages/js/index.html"><img class="mb-2" src="https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg" width="96" height="96" alt="app development"/>
-              <div class="h5 ">JavaScript</a></div>
-            </div>
+          <div class="col-md-3 text-center" data-aos="fade-up" data-aos-delay="300"><img class="mb-2"
+              src="https://upload.wikimedia.org/wikipedia/commons/f/f5/Devicon-css3-plain-wordmark.svg" width="96"
+              height="96" alt="javascript" />
+            <div class="h5">CSS</div>
           </div>
-          <div class="row py-5">
-            <div class="col-md-3 text-center" data-aos="fade-down" data-aos-delay="100"><img class="mb-2" src="/assets/media/images/django.svg" width="96" height="96" alt="web design"/>
-              <div class="h5">Django</div>
-            </div>
-            <div class="col-md-3 text-center" data-aos="fade-down" data-aos-delay="200"><img class="mb-2" src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" width="96" height="96" alt="graphic design"/>
-              <div class="h5">React</div>
-            </div>
-            <div class="col-md-3 text-center" data-aos="fade-down" data-aos-delay="300"><img class="mb-2" src="https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg" width="96" height="96" alt="ui-ux"/>
-              <div class="h5">PHP</div>
-            </div>
-            <div class="col-md-3 text-center" data-aos="fade-down" data-aos-delay="400"><img class="mb-2" src="https://www.vectorlogo.zone/logos/mysql/mysql-official.svg" width="96" height="96" alt="app development"/>
-              <div class="h5">MySQL</div>
-            </div>
-          </div>
+          <div class="col-md-3 text-center" data-aos="fade-up" data-aos-delay="400"><a class="nodecor "
+              href="/assets/pages/js/index.html"><img class="mb-2"
+                src="https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg" width="96"
+                height="96" alt="app development" />
+              <div class="h5 ">JavaScript
+            </a></div>
         </div>
       </div>
-      <!--Skills-->
-      <div class="full-height section px-3 px-lg-4 pt-5" id="skills">
-        <div class="container-narrow">
-          <div class="text-center mb-5">
-            <h2 class="marker marker-center">My Skills</h2>
-          </div>
-          <div class="text-center">
-            <p class="mx-auto mb-3 description" >I am a quick learner and specialize in multitude of skills required for Web Application Development and Product Design</p>
-          </div>
-          <div class=" p-3">
-            <div class="row">
-              <div class="col-md-5">
-                <div class="py-1">
-                  <div class="d-flex text-small fw-bolder"><span class="me-auto">HTML5</span><span>90%</span></div>
-                  <div class="progress my-1">
-                    <div class="progress-bar bg-primary" role="progressbar" data-aos="zoom-in-right" data-aos-delay="100" data-aos-anchor=".skills-section" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                </div>
-                <div class="py-1">
-                  <div class="d-flex text-small fw-bolder"><span class="me-auto">CSS/Bootstrap</span><span>90%</span></div>
-                  <div class="progress my-1">
-                    <div class="progress-bar bg-primary" role="progressbar" data-aos="zoom-in-right" data-aos-delay="200" data-aos-anchor=".skills-section" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                </div>
-                <div class="py-1">
-                  <div class="d-flex text-small fw-bolder"><span class="me-auto">JavaScript</span><span>80%</span></div>
-                  <div class="progress my-1">
-                    <div class="progress-bar bg-primary" role="progressbar" data-aos="zoom-in-right" data-aos-delay="300" data-aos-anchor=".skills-section" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                </div>
-                <div class="py-1">
-                  <div class="d-flex text-small fw-bolder"><span class="me-auto">React</span><span>50%</span></div>
-                  <div class="progress my-1">
-                    <div class="progress-bar bg-primary" role="progressbar" data-aos="zoom-in-right" data-aos-delay="300" data-aos-anchor=".skills-section" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-5 offset-md-2">
-                <div class="py-1">
-                  <div class="d-flex text-small fw-bolder"><span class="me-auto">Python</span><span>70%</span></div>
-                  <div class="progress my-1">
-                    <div class="progress-bar bg-primary" role="progressbar" data-aos="zoom-in-right" data-aos-delay="400" data-aos-anchor=".skills-section" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                </div>
-                <div class="py-1">
-                  <div class="d-flex text-small fw-bolder"><span class="me-auto">WordPress</span><span>70%</span></div>
-                  <div class="progress my-1">
-                    <div class="progress-bar bg-primary" role="progressbar" data-aos="zoom-in-right" data-aos-delay="500" data-aos-anchor=".skills-section" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                </div>
-                <div class="py-1">
-                  <div class="d-flex text-small fw-bolder"><span class="me-auto">UX/UI</span><span>60%</span></div>
-                  <div class="progress my-1">
-                    <div class="progress-bar bg-primary" role="progressbar" data-aos="zoom-in-right" data-aos-delay="600" data-aos-anchor=".skills-section" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                </div>
-                <div class="py-1">
-                  <div class="d-flex text-small fw-bolder"><span class="me-auto">Photoshop</span><span>60%</span></div>
-                  <div class="progress my-1">
-                    <div class="progress-bar bg-primary" role="progressbar" data-aos="zoom-in-right" data-aos-delay="600" data-aos-anchor=".skills-section" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+      <div class="row py-5">
+        <div class="col-md-3 text-center" data-aos="fade-down" data-aos-delay="100"><img class="mb-2"
+            src="/assets/media/images/django.svg" width="96" height="96" alt="web design" />
+          <div class="h5">Django</div>
+        </div>
+        <div class="col-md-3 text-center" data-aos="fade-down" data-aos-delay="200"><img class="mb-2"
+            src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" width="96" height="96"
+            alt="graphic design" />
+          <div class="h5">React</div>
+        </div>
+        <div class="col-md-3 text-center" data-aos="fade-down" data-aos-delay="300"><img class="mb-2"
+            src="https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg" width="96" height="96" alt="ui-ux" />
+          <div class="h5">PHP</div>
+        </div>
+        <div class="col-md-3 text-center" data-aos="fade-down" data-aos-delay="400"><img class="mb-2"
+            src="https://www.vectorlogo.zone/logos/mysql/mysql-official.svg" width="96" height="96"
+            alt="app development" />
+          <div class="h5">MySQL</div>
         </div>
       </div>
-<!--Experiences-->
-      <div class=" bg-light full-height section px-3 px-lg-4 pt-5" id="experience">
-        <div class="container-narrow">
-          <div class="text-center mb-5">
-            <h2 class="marker marker-center">Experience</h2>
-          </div>
-          <div class="row ">
-            <div class="col-md-6 ">
-              <div class="bg-light card mb-3" data-aos="fade-right" data-aos-delay="100">
-                <div class="card-header px-3 py-2">
-                  <div class="d-flex justify-content-between">
-                    <div>
-                      <h3 class="h5 mb-1">Software Development</h3>
-                      <div class="text-muted text-small">Correlation One. <small>(2023-Currently)</small></div>
-                    </div><img src="https://www.correlation-one.com/hubfs/c1logo_color.png" alt="Correlation One" width="100%" style="max-width: 226px; max-height: 20px">
-                  </div>
+    </div>
+    </div>
+    <!--Skills-->
+    <div class="full-height section px-3 px-lg-4 pt-5" id="skills">
+      <div class="container-narrow">
+        <div class="text-center mb-5">
+          <h2 class="marker marker-center">My Skills</h2>
+        </div>
+        <div class="text-center">
+          <p class="mx-auto mb-3 description">I am a quick learner and specialize in multitude of skills required for
+            Web Application Development and Product Design</p>
+        </div>
+        <div class=" p-3">
+          <div class="row">
+            <div class="col-md-5">
+              <div class="py-1">
+                <div class="d-flex text-small fw-bolder"><span class="me-auto">HTML5</span><span>90%</span></div>
+                <div class="progress my-1">
+                  <div class="progress-bar bg-primary" role="progressbar" data-aos="zoom-in-right" data-aos-delay="100"
+                    data-aos-anchor=".skills-section" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
+                    aria-valuemax="100"></div>
                 </div>
-                <div class="card-body px-3 py-2">
-                    <p>Web development is a program focused on teaching individuals how to create websites and web applications using programming languages such as HTML, CSS, and JavaScript.</p>
-                    <p>Students learn how to design and code web pages, create responsive layouts, and develop interactive features using various frameworks and tools. </p>
-                    <p>They also gain an understanding of web development best practices, including accessibility and search engine optimization, as well as learn how to deploy and maintain their projects on the web.</p>
+              </div>
+              <div class="py-1">
+                <div class="d-flex text-small fw-bolder"><span class="me-auto">CSS/Bootstrap</span><span>90%</span>
+                </div>
+                <div class="progress my-1">
+                  <div class="progress-bar bg-primary" role="progressbar" data-aos="zoom-in-right" data-aos-delay="200"
+                    data-aos-anchor=".skills-section" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
+                    aria-valuemax="100"></div>
+                </div>
+              </div>
+              <div class="py-1">
+                <div class="d-flex text-small fw-bolder"><span class="me-auto">JavaScript</span><span>80%</span></div>
+                <div class="progress my-1">
+                  <div class="progress-bar bg-primary" role="progressbar" data-aos="zoom-in-right" data-aos-delay="300"
+                    data-aos-anchor=".skills-section" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
+                    aria-valuemax="100"></div>
+                </div>
+              </div>
+              <div class="py-1">
+                <div class="d-flex text-small fw-bolder"><span class="me-auto">React</span><span>50%</span></div>
+                <div class="progress my-1">
+                  <div class="progress-bar bg-primary" role="progressbar" data-aos="zoom-in-right" data-aos-delay="300"
+                    data-aos-anchor=".skills-section" style="width: 50%" aria-valuenow="50" aria-valuemin="0"
+                    aria-valuemax="100"></div>
                 </div>
               </div>
             </div>
-            <div class="col-md-6">
-              <div class="bg-light card mb-3" data-aos="fade-left" data-aos-delay="300">
-                <div class="card-header px-3 py-2">
-                  <div class="d-flex justify-content-between">
-                    <div>
-                      <h3 class="h5 mb-1">IT Support Technician</h3>
-                      <div class="text-muted text-small">Amazon UK. <small>(2022-2023)</small></div>
-                    </div><img src="/assets/media/images/t_amazon-robotics.jpg" width="auto" height="48" alt="app development"/>
-                  </div>
-                </div>
-                <div class="card-body px-3 py-2">
-                  <p>Responsible for allocation, maintaining, and troubleshooting IT equipment used throughout the company with speed, accuracy, and exceptional service. Handling support requests in accordance with Amazon's policies and procedures, exceeding Service Level Agreements (SLAs) by providing excellent service. Supporting Amazon Operations team by resolving technical issues and ensuring that critical areas were not affected. Actively participated in knowledge transfer, mentored and onboarded newly hired associates, and supported multiple buildings in the area as well as remote customers. I worked closely with third-party vendors to maintain uninterrupted service delivery to customers.</p>
+            <div class="col-md-5 offset-md-2">
+              <div class="py-1">
+                <div class="d-flex text-small fw-bolder"><span class="me-auto">Python</span><span>70%</span></div>
+                <div class="progress my-1">
+                  <div class="progress-bar bg-primary" role="progressbar" data-aos="zoom-in-right" data-aos-delay="400"
+                    data-aos-anchor=".skills-section" style="width: 70%" aria-valuenow="70" aria-valuemin="0"
+                    aria-valuemax="100"></div>
                 </div>
               </div>
-            </div>
-            <div class="col-md-6">
-              <div class="bg-light card mb-3" data-aos="fade-right" data-aos-delay="200">
-                <div class="card-header px-3 py-2">
-                  <div class="d-flex justify-content-between">
-                    <div>
-                      <h3 class="h5 mb-1">Team Lead</h3>
-                      <div class="text-muted text-small">Amazon UK. <small>(2021-2022)</small></div>
-                    </div><img src="/assets/media/images/t_amazon-robotics.jpg" width="auto" height="48" alt="app development"/>
-                </div>
-                </div>
-                <div class="card-body px-3 py-2">
-                  <p>Collaborated with Operations Management to implement efficient team operations, resulting in 100% completion of projects and achievement of performance/quality targets.
-
-                    Optimised team productivity and achieved project goals through effective delegation, task prioritisation, and successful project outcomes with high client satisfaction. 
-                    Improved team performance, efficiency, and morale through identifying areas for growth, providing coaching and motivation, and maintaining a positive and safe work environment.
-                    </p>
+              <div class="py-1">
+                <div class="d-flex text-small fw-bolder"><span class="me-auto">WordPress</span><span>70%</span></div>
+                <div class="progress my-1">
+                  <div class="progress-bar bg-primary" role="progressbar" data-aos="zoom-in-right" data-aos-delay="500"
+                    data-aos-anchor=".skills-section" style="width: 70%" aria-valuenow="70" aria-valuemin="0"
+                    aria-valuemax="100"></div>
                 </div>
               </div>
-            </div>
-            <div class="col-md-6">
-              <div class="bg-light  card mb-3" data-aos="fade-left" data-aos-delay="400">
-                <div class="card-header px-3 py-2">
-                  <div class="d-flex justify-content-between">
-                    <div>
-                      <h3 class="h5 mb-1">Cisco Certified Network Associate</h3>
-                      <div class="text-muted text-small">Cisco Inc. <small>(2021-2022)</small></div>
-                    </div><img src="/assets/media/images/ccna.png" width="auto" height="48" alt="full stack"/>
-                  </div>
+              <div class="py-1">
+                <div class="d-flex text-small fw-bolder"><span class="me-auto">UX/UI</span><span>60%</span></div>
+                <div class="progress my-1">
+                  <div class="progress-bar bg-primary" role="progressbar" data-aos="zoom-in-right" data-aos-delay="600"
+                    data-aos-anchor=".skills-section" style="width: 60%" aria-valuenow="60" aria-valuemin="0"
+                    aria-valuemax="100"></div>
                 </div>
-                <div class="card-body px-3 py-2">
-                    <p>CCNA is a globally recognized certification for IT professionals who work with computer networks. It validates their foundational knowledge and skills in designing, configuring, operating, and troubleshooting medium-sized routed and switched networks using Cisco technologies. CCNA exam covers network fundamentals, IP connectivity, security fundamentals, automation, and programmability.</p></div>
+              </div>
+              <div class="py-1">
+                <div class="d-flex text-small fw-bolder"><span class="me-auto">Photoshop</span><span>60%</span></div>
+                <div class="progress my-1">
+                  <div class="progress-bar bg-primary" role="progressbar" data-aos="zoom-in-right" data-aos-delay="600"
+                    data-aos-anchor=".skills-section" style="width: 60%" aria-valuenow="60" aria-valuemin="0"
+                    aria-valuemax="100"></div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+    </div>
+    <!--Experiences-->
+    <div class=" bg-light full-height section px-3 px-lg-4 pt-5" id="experience">
+      <div class="container-narrow">
+        <div class="text-center mb-5">
+          <h2 class="marker marker-center">Experience</h2>
+        </div>
+        <div class="row ">
+          <div class="col-md-6 ">
+            <div class="bg-light card mb-3" data-aos="fade-right" data-aos-delay="100">
+              <div class="card-header px-3 py-2">
+                <div class="d-flex justify-content-between">
+                  <div>
+                    <h3 class="h5 mb-1">Software Development</h3>
+                    <div class="text-muted text-small">Correlation One. <small>(2023-Currently)</small></div>
+                  </div><img src="https://www.correlation-one.com/hubfs/c1logo_color.png" alt="Correlation One"
+                    width="100%" style="max-width: 226px; max-height: 20px">
+                </div>
+              </div>
+              <div class="card-body px-3 py-2">
+                <p>Web development is a program focused on teaching individuals how to create websites and web
+                  applications using programming languages such as HTML, CSS, and JavaScript.</p>
+                <p>Students learn how to design and code web pages, create responsive layouts, and develop interactive
+                  features using various frameworks and tools. </p>
+                <p>They also gain an understanding of web development best practices, including accessibility and search
+                  engine optimization, as well as learn how to deploy and maintain their projects on the web.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="bg-light card mb-3" data-aos="fade-left" data-aos-delay="300">
+              <div class="card-header px-3 py-2">
+                <div class="d-flex justify-content-between">
+                  <div>
+                    <h3 class="h5 mb-1">IT Support Technician</h3>
+                    <div class="text-muted text-small">Amazon UK. <small>(2022-2023)</small></div>
+                  </div><img src="/assets/media/images/t_amazon-robotics.jpg" width="auto" height="48"
+                    alt="app development" />
+                </div>
+              </div>
+              <div class="card-body px-3 py-2">
+                <p>Responsible for allocation, maintaining, and troubleshooting IT equipment used throughout the company
+                  with speed, accuracy, and exceptional service. Handling support requests in accordance with Amazon's
+                  policies and procedures, exceeding Service Level Agreements (SLAs) by providing excellent service.
+                  Supporting Amazon Operations team by resolving technical issues and ensuring that critical areas were
+                  not affected. Actively participated in knowledge transfer, mentored and onboarded newly hired
+                  associates, and supported multiple buildings in the area as well as remote customers. I worked closely
+                  with third-party vendors to maintain uninterrupted service delivery to customers.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="bg-light card mb-3" data-aos="fade-right" data-aos-delay="200">
+              <div class="card-header px-3 py-2">
+                <div class="d-flex justify-content-between">
+                  <div>
+                    <h3 class="h5 mb-1">Team Lead</h3>
+                    <div class="text-muted text-small">Amazon UK. <small>(2021-2022)</small></div>
+                  </div><img src="/assets/media/images/t_amazon-robotics.jpg" width="auto" height="48"
+                    alt="app development" />
+                </div>
+              </div>
+              <div class="card-body px-3 py-2">
+                <p>Collaborated with Operations Management to implement efficient team operations, resulting in 100%
+                  completion of projects and achievement of performance/quality targets.
 
-
- 
+                  Optimised team productivity and achieved project goals through effective delegation, task
+                  prioritisation, and successful project outcomes with high client satisfaction.
+                  Improved team performance, efficiency, and morale through identifying areas for growth, providing
+                  coaching and motivation, and maintaining a positive and safe work environment.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="bg-light  card mb-3" data-aos="fade-left" data-aos-delay="400">
+              <div class="card-header px-3 py-2">
+                <div class="d-flex justify-content-between">
+                  <div>
+                    <h3 class="h5 mb-1">Cisco Certified Network Associate</h3>
+                    <div class="text-muted text-small">Cisco Inc. <small>(2021-2022)</small></div>
+                  </div><img src="/assets/media/images/ccna.png" width="auto" height="48" alt="full stack" />
+                </div>
+              </div>
+              <div class="card-body px-3 py-2">
+                <p>CCNA is a globally recognized certification for IT professionals who work with computer networks. It
+                  validates their foundational knowledge and skills in designing, configuring, operating, and
+                  troubleshooting medium-sized routed and switched networks using Cisco technologies. CCNA exam covers
+                  network fundamentals, IP connectivity, security fundamentals, automation, and programmability.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+    
 
     <!--Contact-->
-<div class="full-height section  px-lg-4 pb-4 pt-5 mb-1" id="contact">
-  <div class="container-narrow">
-    <div class="text-center mb-5">
-      <h2 class="marker marker-center">Contact Me</h2>
-    </div>
-    <div class="row">
-      <div class="col-md-6 aos-init aos-animate" data-aos="zoom-in" data-aos-delay="100">
-        <div class="my-2 p-3 pt-2"><form action="https://formspree.io/your@email.com" method="POST">
-    <div class="form-group my-2">
-      <label for="name" class="form-label fw-bolder">Name</label>
-      <input class="form-control" type="text" id="name" name="name" required="">
-    </div>
-    <div class="form-group my-2">
-      <label for="email" class="form-label fw-bolder">Email</label>
-      <input class="form-control" type="email" id="email" name="_replyto" required="">
-    </div>
-  <div class="form-group my-2">
-    <label for="message" class="form-label fw-bolder">Message</label>
-    <textarea class="form-control" style="resize: none;" id="message" name="message" rows="4" required=""></textarea>
-  </div>
-  <button class="btn btn-primary mt-2" type="submit">Send</button>
-</form>
+    <div class="full-height section  px-lg-4 pb-4 pt-5 mb-1" id="contact">
+      <div class="container-narrow">
+        <div class="text-center mb-5">
+          <h2 class="marker marker-center">Contact Me</h2>
         </div>
-      </div>
-      <div class="col-md-6 aos-init aos-animate" data-aos="fade-left" data-aos-delay="300">
-        <div class="mt-3 px-1">
-          <div class="h5">Let’s talk! How can I help?</div>
-          <p>If you like my work then send me a message using the contact form. </p>
-          <p>Or get in touch using my email, or my contact number.</p>
-          <p>See you soon!</p>
-        </div>
-        <div class="mt-53 px-1">
-          <div class="row"> 
-            <div class="col-sm-2">
-              <div class="pb-1">Email:</div>
+        <div class="row">
+          <div class="col-md-6 aos-init aos-animate" data-aos="zoom-in" data-aos-delay="100">
+            <div class="my-2 p-3 pt-2">
+              <form action="https://formspree.io/your@email.com" method="POST">
+                <div class="form-group my-2">
+                  <label for="name" class="form-label fw-bolder">Name</label>
+                  <input class="form-control" type="text" id="name" name="name" required="">
+                </div>
+                <div class="form-group my-2">
+                  <label for="email" class="form-label fw-bolder">Email</label>
+                  <input class="form-control" type="email" id="email" name="_replyto" required="">
+                </div>
+                <div class="form-group my-2">
+                  <label for="message" class="form-label fw-bolder">Message</label>
+                  <textarea class="form-control" style="resize: none;" id="message" name="message" rows="4"
+                    required=""></textarea>
+                </div>
+                <button class="btn btn-primary mt-2" type="submit">Send</button>
+              </form>
             </div>
-            <div class="col-sm-10">
-              <div class="pb-1 fw-bolder">iglishani@gmail.com</div>
+          </div>
+          <div class="col-md-6 aos-init aos-animate" data-aos="fade-left" data-aos-delay="300">
+            <div class="mt-3 px-1">
+              <div class="h5">Let’s talk! How can I help?</div>
+              <p>If you like my work then send me a message using the contact form. </p>
+              <p>Or get in touch using my email, or my contact number.</p>
+              <p>See you soon!</p>
             </div>
-            <div class="col-sm-2">
-              <div class="pb-1">Skype:</div>
-            </div>
-            <div class="col-sm-10">
-              <div class="pb-1 fw-bolder">username@skype.com</div>
-            </div>
-            <div class="col-sm-2">
-              <div class="pb-1">Phone:</div>
-            </div>
-            <div class="col-sm-10">
-              <div class="pb-1 fw-bolder">+447999999999</div>
+            <div class="mt-53 px-1">
+              <div class="row">
+                <div class="col-sm-2">
+                  <div class="pb-1">Email:</div>
+                </div>
+                <div class="col-sm-10">
+                  <div class="pb-1 fw-bolder">iglishani@gmail.com</div>
+                </div>
+                <div class="col-sm-2">
+                  <div class="pb-1">Skype:</div>
+                </div>
+                <div class="col-sm-10">
+                  <div class="pb-1 fw-bolder">username@skype.com</div>
+                </div>
+                <div class="col-sm-2">
+                  <div class="pb-1">Phone:</div>
+                </div>
+                <div class="col-sm-10">
+                  <div class="pb-1 fw-bolder">+447999999999</div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</div>
-<footer>
-  <div class="text-center bg-light p-3" style="background-color: hsl(216, 25%, 90%);">© 2023
-    Designed by 
-    <a class="" href="/index.html"> <strong>Igli Shani</strong></a>
-</div>
-</footer>
+    
+  
+   
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script type="text/javascript" src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
-<script src="/assets/js/js.js"></script>
-
-<script>
-    AOS.init();
+    <footer>
+      <div class="text-center bg-light p-3" style="background-color: hsl(216, 25%, 90%);">© 2023
+        Designed by
+        <a class="" href="/index.html"> <strong>Igli Shani</strong></a>
+      </div>
 
 
 
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script src="/assets/js/js.js"></script>
 
-  </script>
+    <script>
+      AOS.init();
+
+
+
+
+    </script>
 
 
 
 </body>
+
 </html>
